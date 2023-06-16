@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, FC } from "react";
 import { cva, VariantProps } from "class-variance-authority";
-import { Loader2 } from "lucide-react";
+import { Icons } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
@@ -44,7 +44,7 @@ const Button: FC<ButtonProps> = ({
       disabled={isLoading}
       {...props}
     >
-      {isLoading ? <Loader2 /> : null}
+      {isLoading ? <Icons.spinner /> : null}
       {children}
     </button>
   );
