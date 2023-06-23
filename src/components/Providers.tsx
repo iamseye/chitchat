@@ -9,10 +9,10 @@ interface ProvidersProps {
 
 const Providers: FC<ProvidersProps> = ({ children }) => {
   return (
-    <>
+    <div>
       <Toaster position="top-center" reverseOrder={false} />
       {children}
-    </>
+    </div>
   );
 };
 
