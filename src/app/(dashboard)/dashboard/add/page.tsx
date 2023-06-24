@@ -1,5 +1,7 @@
-import { AddFriendButton } from "@/components/ui/AddFriendButton";
+"use client";
+
 import { FC } from "react";
+import { AddFriendButton } from "@/components/ui/AddFriendButton";
 
 interface pageProps {}
 
