@@ -41,13 +41,13 @@ export const authOptions: NextAuthOptions = {
         return token;
       }
 
-      const { id, name, email, image: pictures } = dbUser;
+      const { id, name, email, image: picture } = dbUser;
 
       return {
         id,
         name,
         email,
-        pictures,
+        picture,
       };
     },
     async session({ session, token }) {

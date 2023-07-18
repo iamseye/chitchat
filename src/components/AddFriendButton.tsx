@@ -5,8 +5,8 @@ import axios, { AxiosError } from "axios";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { addFriendValidator } from "@/lib/validations/add-friend";
-import Button from "./Button";
-import { Input } from "./Input";
+import Button from "./ui/Button";
+import { Input } from "./ui/Input";
 
 export function AddFriendButton() {
   const [isLoading, setIsLoading] = useState(false);

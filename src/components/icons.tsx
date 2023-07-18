@@ -2,6 +2,7 @@ import {
   Loader2,
   UserPlus,
   LucideProps,
+  LogOut,
   type Icon as LucideIcon,
 } from "lucide-react";
 
@@ -46,6 +47,7 @@ export const Icons = {
       <path d="M1 1h22v22H1z" fill="none" />
     </svg>
   ),
+  signOut: LogOut,
 };
 
 export type Icon = keyof typeof Icons;
